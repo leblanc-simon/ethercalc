@@ -3,7 +3,7 @@
     s_BrowserNotSupported: "Navigateur non supporté",
     s_InternalError: "Erreur interne de SocialCalc (probablement un bug interne) : ",
     s_pssUnknownColType: "Type de champ de colonne inconnu", // ?? 
-    s_pssUnknownRowType: "Unknown row type item" // ?? 
+    s_pssUnknownRowType: "Unknown row type item", // ?? 
     s_pssUnknownLineType: "Type de ligne inconnu",
     s_cfspUnknownCellType: "Unknown cell type item", // ?? 
     doCanonicalizeSheet: !0,
