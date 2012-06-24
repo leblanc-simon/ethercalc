@@ -494,7 +494,7 @@
     s_fclass_text: "Texte",
     lastone: null,
     s_loc_plain: "Plain",
-    s_loc_graph: "Graph",
+    s_loc_graph: "Graphique",
     s_loc_cells_to_graph: "Cells to Graph",
     s_loc_set_cells_to_graph: "Set Cells To Graph",
     s_loc_graph_type: "Graph Type",
@@ -510,5 +510,6 @@
     s_loc_x:"X ",
     s_loc_y:"Y ",
     s_loc_max:"Max ",
-    s_loc_min:"Min "
+    s_loc_min:"Min ",
+    s_GraphRangeNotSelected: "Select a range of cells with numeric values to graph and use the OK button above to set the range as the graph range."
 };
