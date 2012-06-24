@@ -494,7 +494,7 @@
     s_fclass_text: "Texte",
     lastone: null,
     s_loc_plain = "Plain",
-    s_loc_graph = "Graph",
+    s_loc_graph = "Graphique",
     s_loc_cells_to_graph = "Cells to Graph",
     s_loc_set_cells_to_graph = "Set Cells To Graph",
     s_loc_graph_type = "Graph Type",
