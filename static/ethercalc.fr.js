@@ -511,5 +511,7 @@
     s_loc_y:"Y ",
     s_loc_max:"Max ",
     s_loc_min:"Min ",
-    s_GraphRangeNotSelected: "Choisissez une plage de cellules de valeurs numériques, puis utilisez le bouton OK ci-dessus pour sélectionner cette plage comme celle à tracer."
+    s_GraphRangeNotSelected: "Choisissez une plage de cellules de valeurs numériques, puis utilisez le bouton OK ci-dessus pour sélectionner cette plage comme celle à tracer.",
+    s_loc_select_range: "[select range]",
+    s_loc_graph_view: "Graph View"
 };

@@ -146,7 +146,7 @@
     ss.tabs?.push
       name: "graph"
       text: SocialCalc.Constants.s_loc_graph
-      html: '<div id="%id.graphtools" style="display:none;"> <div style="%tbt."> <table cellspacing="0" cellpadding="0"><tr>   <td style="vertical-align:middle;padding-right:32px;padding-left:16px;">    <div style="%tbt.">Cells to Graph</div>    <div id="%id.graphrange" style="font-weight:bold;">Not Set</div>   </td>  <td style="vertical-align:top;padding-right:32px;">   <div style="%tbt.">Set Cells To Graph</div>    <select id="%id.graphlist" size="1" onfocus="%s.CmdGotFocus(this);"><option selected>[select range]</option></select>   </td>   <td style="vertical-align:middle;padding-right:4px;">    <div style="%tbt.">Graph Type</div>     <select id="%id.graphtype" size="1" onchange="window.GraphChanged(this);" onfocus="%s.CmdGotFocus(this);"></select>     <input type="button" value="OK" onclick="window.GraphSetCells();" style="font-size:x-small;">    </div>   </td>   <td style="vertical-align:middle;padding-right:16px;">    <div style="%tbt.">&nbsp;</div>     <input id="%id.graphhelp" type="button" onclick="DoGraph(true);" value="Help" style="font-size:x-small;">    </div>   </td>   <td style="vertical-align:middle;padding-right:16px;">     Min X <input id="%id.graphMinX" onchange="window.MinMaxChanged(this,0);" onfocus="%s.CmdGotFocus(this);" size=5/>     Max X <input id="%id.graphMaxX" onchange="window.MinMaxChanged(this,1);" onfocus="%s.CmdGotFocus(this);" size=5/><br/>     Min Y <input id="%id.graphMinY" onchange="window.MinMaxChanged(this,2);" onfocus="%s.CmdGotFocus(this);" size=5/>     Max Y <input id="%id.graphMaxY" onchange="window.MinMaxChanged(this,3);" onfocus="%s.CmdGotFocus(this);" size=5/>    </div>   </td>  </tr></table> </div></div>'
+      html: '<div id="%id.graphtools" style="display:none;"> <div style="%tbt."> <table cellspacing="0" cellpadding="0"><tr>   <td style="vertical-align:middle;padding-right:32px;padding-left:16px;">    <div style="%tbt.">' + SocialCalc.Constants.s_loc_cells_to_graph + '</div>    <div id="%id.graphrange" style="font-weight:bold;">' + SocialCalc.Constants.s_loc_not_set + '</div>   </td>  <td style="vertical-align:top;padding-right:32px;">   <div style="%tbt.">' + SocialCalc.Constants.s_loc_set_cells_to_graph + '</div>    <select id="%id.graphlist" size="1" onfocus="%s.CmdGotFocus(this);"><option selected>' + SocialCalc.Constants.s_loc_select_range + '</option></select>   </td>   <td style="vertical-align:middle;padding-right:4px;">    <div style="%tbt.">' + SocialCalc.Constants.s_loc_graph_type + '</div>     <select id="%id.graphtype" size="1" onchange="window.GraphChanged(this);" onfocus="%s.CmdGotFocus(this);"></select>     <input type="button" value="' + SocialCalc.Constants.s_loc_ok + '" onclick="window.GraphSetCells();" style="font-size:x-small;">    </div>   </td>   <td style="vertical-align:middle;padding-right:16px;">    <div style="%tbt.">&nbsp;</div>     <input id="%id.graphhelp" type="button" onclick="DoGraph(true);" value="' + SocialCalc.Constants.s_help_loc + '" style="font-size:x-small;">    </div>   </td>   <td style="vertical-align:middle;padding-right:16px;">     ' + SocialCalc.Constants.s_loc_min + SocialCalc.Constants.s_loc_x + '<input id="%id.graphMinX" onchange="window.MinMaxChanged(this,0);" onfocus="%s.CmdGotFocus(this);" size=5/>     ' + SocialCalc.Constants.s_loc_max + SocialCalc.Constants.s_loc_x + '<input id="%id.graphMaxX" onchange="window.MinMaxChanged(this,1);" onfocus="%s.CmdGotFocus(this);" size=5/><br/>     ' + SocialCalc.Constants.s_loc_min + SocialCalc.Constants.s_loc_y + ' <input id="%id.graphMinY" onchange="window.MinMaxChanged(this,2);" onfocus="%s.CmdGotFocus(this);" size=5/>     ' + SocialCalc.Constants.s_loc_max + SocialCalc.Constants.s_loc_y + '<input id="%id.graphMaxY" onchange="window.MinMaxChanged(this,3);" onfocus="%s.CmdGotFocus(this);" size=5/>    </div>   </td>  </tr></table> </div></div>'
       view: "graph"
       onclick: GraphOnClick
       onclickFocus: true
@@ -156,7 +156,7 @@
         name: "graph"
         divStyle: "overflow:auto;"
         values: {}
-        html: "<div style=\"padding:6px;\">Graph View</div>"
+        html: "<div style=\"padding:6px;\">" + SocialCalc.Constants.s_loc_graph_view + "</div>"
 
     ss.editor?.SettingsCallbacks.graph =
       save: window.GraphSave
@@ -203,6 +203,9 @@
 
   SocialCalc.Constants.s_GraphRangeNotSelected = "Select a range of cells with numeric values to graph and use the OK button above to set the range as the graph range."
 
+  SocialCalc.Constants.s_loc_select_range = "[select range]"
+  SocialCalc.Constants.s_loc_graph_view = "Graph View"
+  
   colorIndex = 0
   getBarColor = ->
     colors = [ "ff0", "0ff", "f0f", "00f", "f00", "0f0", "888", "880", "088", "808", "008", "800", "080"]
